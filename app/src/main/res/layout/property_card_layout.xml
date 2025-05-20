@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_white_shadow">
+
+    <!-- User Image -->
+    <ImageView
+        android:id="@+id/service1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/darkmodebhfind"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/bhfind_button"
+        android:layout_marginEnd="12dp" />
+
+    <!-- Info Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/bh_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/bh_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="14sp"
+            android:textColor="#444444"/>
+
+        <TextView
+            android:id="@+id/bh_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="14sp"
+            android:textColor="#444444"/>
+    </LinearLayout>
+</LinearLayout>

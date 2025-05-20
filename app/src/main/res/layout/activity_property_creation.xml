@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="0dp">
+        <!-- Top Green Header with Logo and Menu -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#144D1B">
+
+            <!-- Background faded CMU image -->
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:clickable="false"
+                android:focusable="false"
+                android:contentDescription="@string/cmu_image"
+                android:src="@drawable/cmu" />
+
+            <!-- Centered logo -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="450dp"
+                    android:layout_height="450dp"
+                    android:contentDescription="@string/official_logo"
+                    android:src="@drawable/updatedfind" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/semi_oval"
+            android:contentDescription="@string/curve"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="24dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/property_name"
+                android:autofillHints="name"
+                android:layout_margin="10dp"
+                android:hint="@string/property_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_gravity="center"
+
+                android:background="@drawable/rounded_edittext" />
+            <EditText
+                android:id="@+id/propery_rate"
+                android:hint="@string/pricing"
+                android:autofillHints="name"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_edittext" />
+            <EditText
+                android:id="@+id/property_location"
+                android:hint="@string/property_location"
+                android:autofillHints="name"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext" />
+            <EditText
+                android:id="@+id/property_description"
+                android:hint="@string/other_description"
+                android:autofillHints="name"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext" />
+
+            <Button
+                android:id="@+id/submit_property_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/submit"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="0dp">
+        <!-- Top Green Header with Logo and Menu -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#144D1B">
+
+            <!-- Background faded CMU image -->
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:clickable="false"
+                android:focusable="false"
+                android:contentDescription="@string/cmu_image"
+                android:src="@drawable/cmu" />
+
+            <!-- Centered logo -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="450dp"
+                    android:layout_height="450dp"
+                    android:contentDescription="@string/official_logo"
+                    android:src="@drawable/updatedfind" />
+            </LinearLayout>
+
+            <!-- Settings icon on top right -->
+            <ImageView
+                android:id="@+id/settingsIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/transparentsettings"
+                android:contentDescription="@string/settings" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/semi_oval"
+            android:contentDescription="@string/curve"
+            android:textSize="69sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#144D1B"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="24dp" />
+
+        <!--Menu-->
+        <ImageView
+            android:id="@+id/service1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/rounded_white_shadow"
+            android:contentDescription="@string/bhfind_button"
+            android:src="@drawable/darkmodebhfind"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
